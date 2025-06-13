@@ -1,0 +1,273 @@
+/*general*/
+html{
+    height:100%
+}
+
+body{
+    width: 100%;
+    background:linear-gradient(rgb(35, 5, 75),rgb(10, 10, 130),rgb(20, 80, 200),rgb(10,10,130),rgb(35, 5, 75));
+    font-family: Montserrat, Arial, sans-serif;
+    color: antiquewhite;
+    font-size: 20px;
+    margin: 0;
+    background-size:cover;
+    background-repeat: repeat;
+    flex-wrap: nowrap;
+}
+/*textos*/
+.cont{
+    display: flex;
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.text-cont{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal-text{
+    padding: 0 10px;
+    margin: 0 20px;
+
+}
+
+.introduct{
+    margin-bottom: 20px;
+}
+
+.imgs{
+    border:5px solid rgb(255, 123, 0);
+    box-shadow: 0 0 20px 0 rgb(255, 123, 0);
+    max-height: 400px;
+}
+
+p{
+    margin: 5px;
+    padding: 15px;
+    font-size: 24px;
+
+}
+
+li{
+    font-size: 24px;
+}
+
+h2{
+    padding: 15px;
+    margin: 5px; 
+}
+
+.link{
+    color: rgb(0, 204, 255);
+}
+
+/*título*/
+.título{
+    width: 85%;
+    height: 325px;
+    background-image: url(imgs/motherboard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    font-style: italic;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border:5px solid rgb(255, 123, 0);
+    box-shadow: 0 0 20px 0 rgb(255, 123, 0);
+
+}
+
+.shadow{
+    box-sizing: border-box;
+    background-color: #0007;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0.864);
+    padding: 20px;
+}
+
+h1{
+    font-family: Zen-dots, Montserrat, Arial;
+    font-size: 36px;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.864);
+    text-shadow: 3px 5px 5px rgb(255, 123, 0);
+    margin: auto;
+}
+
+/*Layout*/
+.layout{
+    height: 80px;
+    background: rgb(20, 15, 40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:5px solid rgb(255, 123, 0);
+    border-right:5px solid rgb(255, 123, 0);
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 20px 0 rgb(255, 123, 0);
+    right: 0;
+    }
+
+.logo{
+    width: 60px;
+    float: left;
+    padding-left: 25px;
+}
+
+.boton{
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    color: rgb(255, 123, 0);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    float: right;
+    text-align: center;
+    border: 2px solid blue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 25px solid, rgb(129, 130, 132);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/*para los hover (el efecto del cambio del color al pasar el cursor)*/
+.boton:hover{
+    background: linear-gradient(transparent, rgba(0, 204, 255, 0.541), rgb(0, 204, 255));
+
+}
+.show-menu:hover,
+.withdraw-menu:hover{
+    color: rgba(0, 204, 255, 0.541) ;
+}
+/*me entero que se le peuden dar propiedades a 2 cosas a la vez xd*/
+.show-menu, 
+.withdraw-menu{
+    font-size: 30px;
+    cursor: pointer; /*para cambiar el cursor, útil saberlo*/
+    transition: 0.4s;
+    display: none; /*para que no se muestre si no es responsive*/
+}
+
+.show-menu{
+    order: 1;
+}
+
+#check{
+    display: none;
+}
+
+.backlayout{
+    width: 100%;
+    height: 80px;
+    background:rgb(20, 15, 40);
+    border-top:5px solid rgb(255, 123, 0);
+    margin-top: auto;
+    float: left;
+    padding: 20px;
+ 
+}
+
+/*cosas variadas*/
+.neon-bar{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0 0 20px 0 rgb(255, 123, 0);
+    margin: 20px;
+}
+/*presentación*/
+/*
+.Presentación{
+    font-family: Zen-dots, Montserrat, Arial, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.864);
+    text-shadow: 3px 5px 5px rgb(255, 123, 0);
+    margin: auto;
+    text-align: center;
+}
+
+.trabajoBox{
+    width: 80%;
+    height: 97%;
+    margin: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.trabajo{
+    width: 80%;
+    height: 95%;
+    margin: 10%;
+    margin-top: 20px;
+    border:5px solid rgb(255, 123, 0)
+}*/
+
+/*RESPONSIVE*/
+@media(max-width:768px) {
+    /*HEADER*/
+    .show-menu,
+    .withdraw-menu{
+        display: block;
+    }
+
+    .layout{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(20, 15, 40);
+        right:-100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .boton{
+        display: block;
+        padding: 20px;
+        border: none;
+        font-size: 40px;
+        border-radius: 0;
+    }
+    
+    .withdraw-menu{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    .show-menu{
+        padding: 40px;
+    }
+
+    #check:checked ~ .layout{
+        right: 0;
+    }
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
+}
